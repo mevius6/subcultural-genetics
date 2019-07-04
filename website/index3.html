@@ -1,0 +1,57 @@
+<!doctype html>
+<html dir="ltr" lang="ru-RU" class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>Будущее | Субкультурная Генетика</title>
+	<meta name="description" content="Идея и набор данных: Николай Иванов,
+	Обучение моделей StyleGAN: Вадим Эпштейн">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="apple-touch-icon" href="icon.png">
+	<link rel="stylesheet" href="css/base.css" type="text/css">
+	<meta name="theme-color" content="#f7f7f7">
+	<base target="_blank">
+</head>
+
+<body>
+
+	<canvas id="glcanvas" width="100vw" height="100vh"></canvas>
+
+	<script type="text/javascript" src="js/patch.js"></script>
+
+	<script>
+		/**
+		 * Called when there was a cables error.
+		 * @param {string} errId - ID of the error, e.g. 'NO_WEBGL' or 'NO_WEBAUDIO' 
+		 *                         when the browser does not support the used APIs
+		 * @param {string} errMsg - The error message
+		 */
+		function showError(errId, errMsg) {
+			alert('An error occured: ' + errId + ', ' + errMsg);
+		}
+
+		function patchInitialized() {
+			// You can now access the patch object (CABLES.patch), register variable watchers and so on
+		}
+
+		function patchFinishedLoading() {
+			// The patch is ready now, all assets have been loaded
+		}
+
+		document.addEventListener('DOMContentLoaded', function (event) {
+			CABLES.patch = new CABLES.Patch({
+				patch: CABLES.exportedPatch,
+				prefixAssetPath: '',
+				glCanvasId: 'glcanvas',
+				glCanvasResizeToWindow: true,
+				onError: showError,
+				onPatchLoaded: patchInitialized,
+				onFinishedLoading: patchFinishedLoading,
+			});
+		});
+	</script>
+
+</body>
+
+</html>

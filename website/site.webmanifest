@@ -1,0 +1,16 @@
+{
+  "dir": "ltr",
+  "lang": "ru-RU",
+  "short_name": "∞",
+  "name": "Субкультурая Генетика",
+  "description": "Проект курса «Фотография в Медиа» для выставки Faces&Laces 2019",
+  "icons": [{
+    "src": "/icon.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f7f7",
+  "theme_color": "#f7f7f7"
+}

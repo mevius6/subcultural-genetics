@@ -137,10 +137,6 @@ body {
 
 @supports (display: grid) {
 
-	.grid > * {
-    max-width: unset;
-	}
-	
 	.grid > * + * {
     margin-top: unset;
 	}

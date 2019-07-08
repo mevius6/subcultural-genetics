@@ -34,11 +34,10 @@
 	let mousepos = { x: winsize.width / 2, y: winsize.height / 2 }
 	window.addEventListener("mousemove", ev => (mousepos = getMousePos(ev)))
 
-	// Custom cursor
 	class Cursor {
 		constructor(el) {
 			this.DOM = { el: el }
-			this.DOM.circle = this.DOM.el.querySelector(".cursor__inner--circle")
+			this.DOM.circle = this.DOM.el.querySelector(".cursor__inner")
 			this.bounds = this.DOM.circle.getBoundingClientRect()
 			this.lastMousePos = { x: 0, y: 0 }
 			this.scale = 1
@@ -75,6 +74,18 @@
 
 	const cursor = new Cursor(document.querySelector(".cursor"))
 
+	const dialog = document.getElementById("dialog")
+	const openBtn = document.getElementById("openBtn")
+	const closeBtn = document.getElementById("closeBtn")
+
+	openBtn.addEventListener("click", function() {
+		dialog.setAttribute("open", true)
+	})
+
+	closeBtn.addEventListener("click", function() {
+		dialog.removeAttribute("open")
+	})
+	
 	;[...document.querySelectorAll("a"), openBtn, closeBtn].forEach(link => {
 		link.addEventListener("mouseenter", () => cursor.enter())
 		link.addEventListener("mouseleave", () => cursor.leave())

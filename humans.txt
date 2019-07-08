@@ -8,4 +8,4 @@
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5, JavaScript,
-    WebGL, Cables.gl
+    GSAP, WebGL, Cables.gl

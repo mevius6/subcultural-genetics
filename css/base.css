@@ -47,7 +47,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-w
 
 @font-face {
 	font-family: Neue Machina;
-	src: url(/fonts/NeueMachina-Regular.woff) format("woff");
+	src: url(/fonts/NeueMachina-Regular.woff2) format("woff2"),
+	     url(/fonts/NeueMachina-Regular.woff) format("woff");
 	font-style: normal;
 	font-weight: normal;
 	font-stretch: normal;

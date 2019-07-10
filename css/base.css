@@ -139,7 +139,7 @@ body {
 @supports (display: grid) {
 
 	.grid > * + * {
-    margin-top: unset;
+		margin-top: unset;
 	}
 	
 	.grid:after {

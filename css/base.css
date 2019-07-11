@@ -34,7 +34,6 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-w
 	--color-hl: hsl(72, 100%, 50%);
 	--timing-1: cubic-bezier(0.895, 0.03, 0.685, 0.22);
 	--timing-2: cubic-bezier(0.165, 0.84, 0.44, 1);
-	--timing-3: cubic-bezier(0.77, 0, 0.175, 1);
 	--duration: .5s;
 	--spacing: 1vw;
 	--fs-bs: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -250,8 +249,8 @@ body {
 	}
 
 	.btn[aria-pressed="true"] {
-		background-color: #fff;
-		color: #000;
+		background-color: hsl(0, 0, 100);
+		color: hsl(0, 0, 0);
 	}
 
 	[data-disabled] {

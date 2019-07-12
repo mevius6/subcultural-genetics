@@ -153,9 +153,13 @@ body {
 		margin-top: unset;
 	}
 
+	.grid:before,
 	.grid:after {
 		content: " ";
 		display: table;
+	}
+
+	.grid:after {
 		clear: both;
 	}
 

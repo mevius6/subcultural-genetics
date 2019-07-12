@@ -144,15 +144,7 @@ body {
 	}
 }
 
-.grid > * + * {
-	margin-top: var(--spacing);
-}
-
 @supports (display: grid) {
-	.grid > * + * {
-		margin-top: unset;
-	}
-
 	.grid:after {
 		content: " ";
 		display: table;

@@ -87,6 +87,7 @@ body {
 	width: 30px;
 	height: 30px;
 	margin: -15px 0 0 -15px;
+	-webkit-pointer-events: none;
 	pointer-events: none;
 	background: var(--color-hl);
 	-webkit-filter: drop-shadow(0 2px 10px var(--color-bd)) hue-rotate(108deg) saturate(100%) brightness(40%);

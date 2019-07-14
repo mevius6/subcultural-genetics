@@ -32,8 +32,8 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-w
 
 :root {
 	--color-hl: hsl(72, 100%, 50%);
-	--timing-1: cubic-bezier(0.895, 0.03, 0.685, 0.22);
-	--timing-2: cubic-bezier(0.165, 0.84, 0.44, 1);
+	--ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+	--ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
 	--duration: 0.5s;
 	--spacing: 1vw;
 	--fs-bs: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -205,13 +205,13 @@ body {
 		width: 30px;
 		height: 30px;
 		fill: var(--color-bd);
-		transition: all var(--duration) var(--timing-1);
+		transition: all var(--duration) var(--ease-in-quart);
 	}
 	.svg:hover {
 		fill: var(--color-hl);
 		-webkit-filter: drop-shadow(0 0 15px var(--color-bd));
 		filter: drop-shadow(0 0 15px var(--color-bd));
-		transition: all var(--duration) var(--timing-2);
+		transition: all var(--duration) var(--ease-out-quart);
 	}
 
 	.main__nav {
@@ -225,12 +225,12 @@ body {
 		font-size: var(--fs-h1);
 		line-height: 1.15;
 		color: var(--color-bd);
-		transition: all var(--duration) var(--timing-1);
+		transition: all var(--duration) var(--ease-in-quart);
 	}
 	.main__nav-link:hover {
 		color: var(--color-hl);
 		text-shadow: 0 2px 10px var(--color-bd);
-		transition: all var(--duration) var(--timing-2);
+		transition: all var(--duration) var(--ease-out-quart);
 	}
 
 	.btn {
@@ -241,7 +241,7 @@ body {
 		font-size: var(--fs-h1);
 		font-family: Neue Machina, sans-serif;
 		line-height: 1.15;
-		transition: all var(--duration) var(--timing-1);
+		transition: all var(--duration) var(--ease-in-quart);
 
 		display: inline-flex;
 		flex: 0 0 auto;
@@ -263,7 +263,7 @@ body {
 	.btn:focus {
 		color: var(--color-hl);
 		text-shadow: 0 2px 10px var(--color-bd);
-		transition-timing-function: var(--timing-2);
+		transition-timing-function: var(--ease-out-quart);
 	}
 
 	.btn--close {

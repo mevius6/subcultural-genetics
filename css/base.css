@@ -234,6 +234,7 @@ body {
 
 	.btn {
 		border: 0;
+		outline: none;
 		background-color: var(--color-bg);
 		color: var(--color-bd);
 		font-size: var(--fs-h1);

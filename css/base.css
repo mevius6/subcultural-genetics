@@ -156,7 +156,7 @@ body {
 	.grid {
 		--min-size-1st: 14rem;
 		--min-size-2nd: 16rem;
-		margin: 0 auto;
+		margin: var(--spacing) auto 0;
 		max-width: 98vw;
 		display: grid;
 		grid-gap: var(--spacing);

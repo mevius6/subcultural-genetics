@@ -66,6 +66,9 @@ body {
 	text-align: center;
 	cursor: none;
 }
+body.loading {
+	overflow: hidden;
+}
 
 .js .loading::before {
 	content: "";

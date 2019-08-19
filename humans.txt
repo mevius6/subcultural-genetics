@@ -1,0 +1,11 @@
+# CREDITS
+
+    - ops by cables user pandur (https://cables.gl/user/pandur)
+    - Photoshop math GLSL shaders by Romain Dura (https://mouaif.wordpress.com/2009/01/05/photoshop-math-with-glsl-shaders/)
+    - cables by undefined development (http://undev.studio)
+    - glmatrix by toji (https://github.com/toji/gl-matrix)
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5, JavaScript,
+    GSAP, WebGL, Cables.gl

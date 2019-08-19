@@ -141,6 +141,7 @@ body.loading {
 .text {
 	margin-block-end: 1.25rem;
 	font-size: var(--fs-bs);
+	padding: 0 .5em;
 }
 
 @media only screen and (min-width: 800px) {

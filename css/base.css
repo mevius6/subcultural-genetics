@@ -202,7 +202,12 @@ body.loading {
 
 	.main__footer-link {
 		margin-block-start: 1rem;
-		font-size: var(--fs-h4);
+	}
+
+	@media only screen and (max-width: 800px) {
+		.main__footer-link {
+			font-size: var(--fs-h4);
+		}
 	}
 
 	.svg {

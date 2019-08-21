@@ -90,4 +90,26 @@
 		link.addEventListener("mouseenter", () => cursor.enter())
 		link.addEventListener("mouseleave", () => cursor.leave())
 	})
+
+	document.addEventListener("keyup", function (event) {
+		if (event.defaultPrevented) {
+			return;
+		}
+		
+		switch (event.key) {
+			case "1":
+				window.open("index1.html");
+				break;
+			case "2":
+				window.open("index2.html");
+				break;
+			case "3":
+				window.open("index3.html");
+				break;
+			default:
+				return;
+		}
+		
+		event.preventDefault();
+	}, true);
 }

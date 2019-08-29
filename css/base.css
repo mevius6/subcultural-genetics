@@ -1,16 +1,17 @@
 html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;box-sizing:border-box;scroll-behavior:smooth}canvas,img,svg{vertical-align:middle}canvas{display:inline-block;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}a,figcaption,figure,img,svg,main{display:block}img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover;border:0}ol,ul,li{list-style-type: none}h1,h2,h3,h4,h5{font-weight:400;font-style:normal;margin:0}a{text-decoration:none;color:inherit;background-color:transparent;cursor:none}a,a:active,a:hover,a:focus{outline:0}
+
+*:focus:not(:focus-visible),
+*:before:focus:not(:focus-visible),
+*:after:focus:not(:focus-visible) {
+	outline: none;
+}
+
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: inherit;
-}
-
-*:focus:not(:focus-visible),
-*:before:focus:not(:focus-visible),
-*:after:focus:not(:focus-visible) {
-	outline: none;
 }
 
 ::-moz-selection {
@@ -214,11 +215,12 @@ body.loading {
 	.svg {
 		width: 30px;
 		height: 30px;
-		fill: var(--color-bd);
+		color: var(--color-bd);
 		transition: all var(--duration) var(--ease-in-quart);
 	}
+
 	.svg:hover {
-		fill: var(--color-hl);
+		color: var(--color-hl);
 		-webkit-filter: drop-shadow(0 0 15px var(--color-bd));
 		filter: drop-shadow(0 0 15px var(--color-bd));
 		transition: all var(--duration) var(--ease-out-quart);

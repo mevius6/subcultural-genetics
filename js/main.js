@@ -85,7 +85,7 @@
 	closeBtn.addEventListener("click", function() {
 		dialog.removeAttribute("open")
 	})
-	
+
 	;[...document.querySelectorAll("a"), openBtn, closeBtn].forEach(link => {
 		link.addEventListener("mouseenter", () => cursor.enter())
 		link.addEventListener("mouseleave", () => cursor.leave())
@@ -95,7 +95,7 @@
 		if (event.defaultPrevented) {
 			return;
 		}
-		
+
 		switch (event.key) {
 			case "1":
 				window.open("index1.html");
@@ -109,7 +109,7 @@
 			default:
 				return;
 		}
-		
+
 		event.preventDefault();
 	}, true);
 }

@@ -1,5 +1,6 @@
 {
     "version": 2,
     "name": "subcultural-genetics",
-    "alias": "subcultural-genetics.com"
+    "alias": "subcultural-genetics.com",
+    "cleanUrls": true
 }

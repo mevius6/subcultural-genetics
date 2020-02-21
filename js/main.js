@@ -98,13 +98,13 @@
 
     switch (event.key) {
       case "1":
-        window.open("index1.html");
+        window.open("/past.html");
         break;
       case "2":
-        window.open("index2.html");
+        window.open("/present.html");
         break;
       case "3":
-        window.open("index3.html");
+        window.open("/future.html");
         break;
       default:
         return;

@@ -78,11 +78,11 @@
   const openBtn = document.getElementById("openBtn")
   const closeBtn = document.getElementById("closeBtn")
 
-  openBtn.addEventListener("click", function() {
+  openBtn.addEventListener("click", e => {
     dialog.setAttribute("open", true)
   })
 
-  closeBtn.addEventListener("click", function() {
+  closeBtn.addEventListener("click", e => {
     dialog.removeAttribute("open")
   })
 
@@ -91,20 +91,20 @@
     link.addEventListener("mouseleave", () => cursor.leave())
   })
 
-  document.addEventListener("keyup", function (event) {
+  document.addEventListener("keyup", event => {
     if (event.defaultPrevented) {
       return;
     }
 
     switch (event.key) {
       case "1":
-        window.open("/past.html");
+        window.open("/past");
         break;
       case "2":
-        window.open("/present.html");
+        window.open("/present");
         break;
       case "3":
-        window.open("/future.html");
+        window.open("/future");
         break;
       default:
         return;

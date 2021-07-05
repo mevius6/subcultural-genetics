@@ -1,5 +1,5 @@
 {
-  const body = document.body
+  const body = document.body;
 
   const MathUtils = {
     lineEq: (y2, y1, x2, x1, currentVal) => {
@@ -26,13 +26,13 @@
     return { x: posx, y: posy }
   }
 
-  let winsize
-  const calcWinsize = () => (winsize = { width: window.innerWidth, height: window.innerHeight })
-  calcWinsize()
-  window.addEventListener("resize", calcWinsize)
+  let winsize;
+  const calcWinsize = () => (winsize = { width: window.innerWidth, height: window.innerHeight });
+  calcWinsize();
+  window.addEventListener("resize", calcWinsize);
 
   let mousepos = { x: winsize.width / 2, y: winsize.height / 2 }
-  window.addEventListener("mousemove", ev => (mousepos = getMousePos(ev)))
+  window.addEventListener("mousemove", ev => (mousepos = getMousePos(ev)));
 
   class Cursor {
     constructor(el) {
@@ -72,24 +72,24 @@
     }
   }
 
-  const cursor = new Cursor(document.querySelector(".cursor"))
+  const cursor = new Cursor(document.querySelector(".cursor"));
 
-  const dialog = document.getElementById("dialog")
-  const openBtn = document.getElementById("openBtn")
-  const closeBtn = document.getElementById("closeBtn")
+  const dialog = document.getElementById("dialog");
+  const openBtn = document.getElementById("openBtn");
+  const closeBtn = document.getElementById("closeBtn");
 
   openBtn.addEventListener("click", e => {
     dialog.setAttribute("open", true)
-  })
+  });
 
   closeBtn.addEventListener("click", e => {
     dialog.removeAttribute("open")
-  })
+  });
 
-  ;[...document.querySelectorAll("a"), openBtn, closeBtn].forEach(link => {
+  [...document.querySelectorAll("a"), openBtn, closeBtn].forEach(link => {
     link.addEventListener("mouseenter", () => cursor.enter())
     link.addEventListener("mouseleave", () => cursor.leave())
-  })
+  });
 
   document.addEventListener("keyup", event => {
     if (event.defaultPrevented) {
